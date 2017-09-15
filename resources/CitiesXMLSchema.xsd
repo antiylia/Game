@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+
+	targetNamespace="http://www.it-academy.by/CitiesXMLSchema" xmlns:tns="http://www.it-academy.by/CitiesXMLSchema"
+	elementFormDefault="qualified">
+
+	<xs:element name="CITIES" type="tns:letters" />
+
+	<xs:complexType name="letters">
+		<xs:sequence>
+			<xs:element name="A" type="tns:cities" />
+			<xs:element name="B" type="tns:cities" />
+			<xs:element name="C" type="tns:cities" />
+			<xs:element name="D" type="tns:cities" />
+			<xs:element name="E" type="tns:cities" />
+			<xs:element name="F" type="tns:cities" />
+			<xs:element name="G" type="tns:cities" />
+			<xs:element name="H" type="tns:cities" />
+			<xs:element name="I" type="tns:cities" />
+			<xs:element name="J" type="tns:cities" />
+			<xs:element name="K" type="tns:cities" />
+			<xs:element name="L" type="tns:cities" />
+			<xs:element name="M" type="tns:cities" />
+			<xs:element name="N" type="tns:cities" />
+			<xs:element name="O" type="tns:cities" />
+			<xs:element name="P" type="tns:cities" />
+			<xs:element name="Q" type="tns:cities" />
+			<xs:element name="R" type="tns:cities" />
+			<xs:element name="S" type="tns:cities" />
+			<xs:element name="T" type="tns:cities" />
+			<xs:element name="U" type="tns:cities" />
+			<xs:element name="V" type="tns:cities" />
+			<xs:element name="W" type="tns:cities" />
+			<xs:element name="Y" type="tns:cities" />
+			<xs:element name="Z" type="tns:cities" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="cities">
+		<xs:sequence>
+			<xs:element name="city" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CITIES   xmlns = "http://www.it-academy.by/CitiesXMLSchema" 
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation = "http://www.it-academy.by/CitiesXMLSchema CitiesXMLSchema.xsd" 
+>
+
+ <A>
+    <city>Abu Dhabi</city>
+    <city>Abuja</city>
+    <city>Addis Ababa</city>
+    <city>Andorra la Vella</city>
+    <city>Antananarivo</city>
+ </A>
+  <B>
+    <city>Beirut</city>
+    <city>Belgrade</city>
+    <city>Belmopan</city>
+    <city>Belfast</city>
+    <city>Berlin</city>
+    <city>Bern</city>    
+ </B>
+ <C>
+    <city>Cairo</city>
+    <city>Canberra</city>
+    <city>Caracas</city>
+ </C>
+ <D>
+    <city>Dakar</city>
+    <city>Damascus</city>
+    <city>Dhaka</city>
+ </D>
+  <E>
+    <city>Edinburgh</city>
+    <city>El Paso</city>
+ </E>
+ <F>
+    <city>Freetown</city>
+    <city>Frankfurt</city>
+ </F>
+ <G>
+    <city>Georgetown</city>
+    <city>Guatemala</city>
+ </G>
+ <H>
+    <city>Hanoi</city>
+    <city>Havana</city>
+    <city>Helsinki</city> 
+ </H>
+ <I>
+    <city>Islamabad</city>
+    <city>Istanbul</city>
+    <city>Irkutsk</city> 
+ </I>
+ <J>
+    <city>Jakarta</city>
+    <city>Johannesburg</city>
+ </J>
+ <K>
+    <city>Kingston</city>
+    <city>Kiev</city>
+ </K>
+ <L>
+    <city>Luxembourg</city>
+    <city>London</city>
+    <city>Lisbon</city> 
+ </L>
+ <M>
+    <city>Manila</city>
+    <city>Mexico</city>
+    <city>Minsk</city>
+    <city>Moscow</city> 
+ </M>
+ <N>
+    <city>New Delhi</city>
+    <city>New York</city>
+    <city>Nagasaki</city> 
+ </N>
+ <O>
+    <city>Oslo</city>
+    <city>Ottawa</city>
+</O>
+ <P>
+    <city>Paris</city>
+    <city>Prague</city>
+</P>
+ <Q>
+    <city>Quito</city>
+    <city>Queenstown</city>    
+</Q>
+ <R>
+    <city>Rome</city>
+    <city>Robinson River</city>    
+</R>
+<S>
+    <city>Santiago</city>
+    <city>Sofia</city>
+    <city>Stockholm</city>
+</S>
+<T>
+    <city>Tallinn</city>
+    <city>Tbilisi</city>
+    <city>Tegucigalpa</city>
+</T>
+<U>
+    <city>Ulaanbaatar</city>    
+</U>
+<V>
+    <city>Vienna</city>
+    <city>Vilnius</city>
+    <city>Valletta</city>
+</V>
+<W>
+    <city>Warsaw</city>
+    <city>Wellington</city>
+    <city>Washington</city>
+</W>
+ <Y>
+    <city>Yerevan</city>
+    <city>Yamoussoukro</city>
+</Y>
+<Z>
+    <city>Zagreb</city>
+    <city>Zurich</city>
+</Z>
+</CITIES>
+
