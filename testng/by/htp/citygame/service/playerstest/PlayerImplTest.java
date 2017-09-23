@@ -48,11 +48,6 @@ public class PlayerImplTest {
 		if (!city.equalsIgnoreCase(responseIfDontKnow)) {
 			assertTrue(firstLetter.equalsIgnoreCase(lastLetter));
 		}
-	}
-
-	@Test
-	public void winnerIsCorrect() {
-
-	}
+	}	
 
 }

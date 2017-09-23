@@ -18,7 +18,9 @@ public class PlayerImpl implements Player {
 	  cityNamesMap.setCityName(cities.getCityName());
 	  }
 	 
-		
+	/**
+	 Method returns city, randomly selected	from array with cities
+	 */
     public String startGame() {
     	String firstCity = "";
     	int cityIndex = -1;
@@ -30,13 +32,17 @@ public class PlayerImpl implements Player {
     	firstCity = cities.getArrayCities()[cityIndex];   
     	return firstCity;
 	 }
-    
-	
+
+	/**
+	 Method returns city, randomly selected	from list of cities, which begin with letter,
+	 the parameter (city) ends
+	 If player don't know answer, it is returned response "I don't remember such city"
+	 */	
     public String giveResponse (String previousCity) {
     	String response = "I don't remember such city";
 		String letter = getLastLetter(previousCity);
-	//	if (ifPlayerKnowCity()) {
-		if (true) {
+		if (ifPlayerKnowCity()) {
+	//	if (true) {
 			List<String> listCities = cities.getCityName().get(letter);
 			
 			Random r = new Random();
@@ -49,12 +55,17 @@ public class PlayerImpl implements Player {
 		return response;		
 	}
     
-    
+    /**
+	 Utility method, which returns last letter of the specified city
+	 */	
 	private String getLastLetter (String previousCity) {
 		String letter = previousCity.substring(previousCity.length()-1, previousCity.length());
 		return letter.toUpperCase();
 	}
 	
+	/**
+	 Utility method, which randomly returns true/false 
+	 */	
 	private boolean ifPlayerKnowCity () {
 		Random r = new Random();
 		return r.nextBoolean();

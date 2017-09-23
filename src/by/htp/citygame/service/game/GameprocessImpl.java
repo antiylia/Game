@@ -15,7 +15,12 @@ public class GameprocessImpl implements Gameprocess {
 		player1 = new PlayerImpl();
 		player2 = new PlayerImpl();
 	}
-
+	
+	/**
+	 Method represent the game process, player's answers are being registering in the list "listResponses"
+	 which provides, answers are not duplicated. If player response "I don't remember such city", 
+	 another player becomes winner
+	 */
 	@Override
 	public Player play() {
 		List<String> listResponses = new ArrayList<>();

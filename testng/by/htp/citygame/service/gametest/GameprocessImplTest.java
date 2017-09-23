@@ -26,5 +26,6 @@ public class GameprocessImplTest {
 	   Player player = gameTest.play();
 	   assertNotNull(player);
 	}
+   
      
 }
