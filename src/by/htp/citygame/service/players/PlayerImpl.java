@@ -41,10 +41,9 @@ public class PlayerImpl implements Player {
     public String giveResponse (String previousCity) {
     	String response = "I don't remember such city";
 		String letter = getLastLetter(previousCity);
-		if (ifPlayerKnowCity()) {
+    	if (ifPlayerKnowCity()) {
 	//	if (true) {
-			List<String> listCities = cities.getCityName().get(letter);
-			
+			List<String> listCities = cities.getCityName().get(letter);			
 			Random r = new Random();
 			int i =-1;
 			do {
@@ -68,7 +67,12 @@ public class PlayerImpl implements Player {
 	 */	
 	private boolean ifPlayerKnowCity () {
 		Random r = new Random();
-		return r.nextBoolean();
+		int i = r.nextInt(10);
+		if (i > 8) {
+			return false;
+		}		
+		return true;
 	}
+	
 	
 }

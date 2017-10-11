@@ -25,6 +25,7 @@ public class GameprocessImpl implements Gameprocess {
 	public Player play() {
 		List<String> listResponses = new ArrayList<>();
 		String response = "";
+		String tempResponse = "";
 		
 		response = player1.startGame();
 		listResponses.add(response);
@@ -33,24 +34,26 @@ public class GameprocessImpl implements Gameprocess {
 		do {			
 
 			do {
-				response = player2.giveResponse(response);
-				if (response.equalsIgnoreCase("I don't remember such city")) {
-					System.out.println("player2" + " " +response);
+				tempResponse = player2.giveResponse(response);
+				if (tempResponse.equalsIgnoreCase("I don't remember such city")) {
+					System.out.println("player2" + " " + tempResponse);
 					return player1;
 				}
-			} while (listResponses.contains(response));
+			} while (listResponses.contains(tempResponse));
+			response = tempResponse;
 			listResponses.add(response);
 			System.out.println("player2" + " " + response);
 
 			
 			do {
-				response = player1.giveResponse(response);
-				if (response.equalsIgnoreCase("I don't remember such city")) {
-					System.out.println("player1" + " " + response);
+				tempResponse = player1.giveResponse(response);
+				if (tempResponse.equalsIgnoreCase("I don't remember such city")) {
+					System.out.println("player1" + " " + tempResponse);
 					return player2;
 				}
 						
-			} while (listResponses.contains(response));
+			} while (listResponses.contains(tempResponse));
+			response = tempResponse;
 			listResponses.add(response);
 			System.out.println("player1" + " " + response);
 					
